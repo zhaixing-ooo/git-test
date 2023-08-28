@@ -5,5 +5,6 @@ public class GitTest {
         System.out.println("gitTest");
         System.out.println("gitTest master second commit");
         System.out.println("gitTest second commit");
+        System.out.println("gitTest merge second commit");
     }
 }
