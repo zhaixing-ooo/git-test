@@ -7,5 +7,6 @@ public class GitTest {
         System.out.println("gitTest second commit");
         System.out.println("gitTest merge second commit");
         System.out.println("gitTest  push commit");
+        System.out.println("gitTest  pull test commit");
     }
 }
