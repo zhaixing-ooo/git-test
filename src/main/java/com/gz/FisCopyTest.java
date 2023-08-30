@@ -9,8 +9,8 @@ public class FisCopyTest {
         try {
             int i ;
            fis = new FileInputStream(new File("凄美地.txt"));
-            fos = new FileOutputStream(new File("COPY.txt"));
-            byte[] bys = new byte[1024];
+            fos = new FileOutputStream(new File("COPY.txt"));//字节输入输出流
+            byte[] bys = new byte[1024];//字符缓冲数组（大幅提高拷贝效率）
             int len;
             while((len = fis.read(bys))!=-1){
                 fos.write(bys,0,len);
