@@ -3,13 +3,12 @@ package com.gz;
 import java.io.*;
 
 public class BufferCopyTest {
-    public class Demo_BufferedStream {
         /*
          * BufferedInputStream    字节缓冲输入流
          * BufferedOutputStream   字节缓冲输出流
          *
          */
-        public static void main(String[] args){
+        public static void main(String[] args) {
             BufferedInputStream bis = null;
             BufferedOutputStream bos = null;
             try {
@@ -23,16 +22,15 @@ public class BufferCopyTest {
                 }
             } catch (IOException e) {
                 throw new RuntimeException(e);
-            }finally {
+            } finally {
                 try {
                     //3.关闭流释放资源
-                    if(bis != null)bis.close();
-                    if(bos != null)bos.close();
+                    if (bis != null) bis.close();
+                    if (bos != null) bos.close();
                 } catch (IOException e) {
                     throw new RuntimeException(e);
                 }
 
             }
         }
-    }
 }
