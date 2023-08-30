@@ -10,8 +10,10 @@ public class FisCopyTest {
             int i ;
            fis = new FileInputStream(new File("凄美地.txt"));
             fos = new FileOutputStream(new File("COPY.txt"));
-            while ((i = fis.read()) != -1) {
-                fos.write(i);
+            byte[] bys = new byte[1024];
+            int len;
+            while((len = fis.read(bys))!=-1){
+                fos.write(bys,0,len);
             }
         } catch (IOException e) {
             throw new RuntimeException(e);
